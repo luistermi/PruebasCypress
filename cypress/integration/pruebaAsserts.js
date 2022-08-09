@@ -1,8 +1,12 @@
+import '../support/commands'
+
 describe("Prueba distintos asserts", function(){
 
     let a = 2;
     it("Prueba1", function(){
-        let a = 1, b = 2;
+        let a = 1, b = 1;
+        cy.log('Soy Luichi');
+        cy.logEspecial('Soy Luichi');
         expect(a===b, "Ambos términos tienen que ser iguales y no lo son. Primer término: " + a + ". Segundo término: " + b + ".").to.equal(true);
     });
     it("Prueba2", function(){
