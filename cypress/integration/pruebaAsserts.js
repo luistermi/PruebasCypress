@@ -2,8 +2,8 @@ describe("Prueba distintos asserts", function(){
 
     let a = 2;
     it("Prueba1", function(){
-        let a = 1, b = 1;
-        expect(a===b).to.equal(true);
+        let a = 1, b = 2;
+        expect(a===b, "Ambos términos tienen que ser iguales y no lo son. Primer término: " + a + ". Segundo término: " + b + ".").to.equal(true);
     });
     it("Prueba2", function(){
         expect(20-20).to.not.equal(1);
